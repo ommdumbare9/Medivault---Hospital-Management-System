@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #12ac8e;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .report-section {
+            margin-bottom: 20px;
+        }
+        .report-section strong {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .report-section p {
+            margin: 0;
+            font-size: 16px;
+        }
+        .next-visit {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e8f9f4;
+            border-left: 4px solid #12ac8e;
+            border-radius: 4px;
+        }
+        .next-visit strong {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Patient Report</h1>
+    </header>
+
+    <div class="container">
+        <div class="report-section">
+            <strong>Patient Name:</strong>
+            <p id="patient-name">Mayur Dhangar</p>
+        </div>
+        <div class="report-section">
+            <strong>Disease:</strong>
+            <p id="disease">Flu</p>
+        </div>
+        <div class="report-section">
+            <strong>Date of Treatment:</strong>
+            <p id="treatment-date">December 19, 2024</p>
+        </div>
+        <div class="report-section">
+            <strong>Time of Treatment:</strong>
+            <p id="treatment-time">9:00 AM - 9:30 AM</p>
+        </div>
+        <div class="report-section">
+            <strong>Treatment Notes:</strong>
+            <p id="treatment-notes">Prescribed rest, hydration, and flu medication.</p>
+        </div>
+
+        <div class="next-visit">
+            <strong>Next Visit:</strong>
+            <p id="next-visit">December 26, 2024, at 10:00 AM</p>
+        </div>
+    </div>
+
+    <script>
+        // Example: Populate report dynamically if data is fetched from a database
+        const patientData = {
+            name: "John Doe",
+            disease: "Flu",
+            treatmentDate: "December 19, 2024",
+            treatmentTime: "9:00 AM - 9:30 AM",
+            notes: "Prescribed rest, hydration, and flu medication.",
+            nextVisit: "December 26, 2024, at 10:00 AM"
+        };
+
+        document.getElementById('patient-name').textContent = patientData.name;
+        document.getElementById('disease').textContent = patientData.disease;
+        document.getElementById('treatment-date').textContent = patientData.treatmentDate;
+        document.getElementById('treatment-time').textContent = patientData.treatmentTime;
+        document.getElementById('treatment-notes').textContent = patientData.notes;
+        document.getElementById('next-visit').textContent = patientData.nextVisit;
+    </script>
+</body>
+</html>
