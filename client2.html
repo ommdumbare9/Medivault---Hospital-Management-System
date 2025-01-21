@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0f947a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-section img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            background-color: #ccc;
+        }
+
+        .details {
+            line-height: 1.6;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #c8f0e5;
+            color: #0f947a;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        .reports-section {
+            margin-top: 30px;
+        }
+
+        .reports-section h2 {
+            color: #0f947a;
+        }
+
+        .reports {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .report-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 30%;
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .report-card h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .report-card p {
+            color: #777;
+        }
+
+        .report-card .date {
+            color: #0f947a;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="section__container nav__container">
+          <div class="nav__logo">Medi<span>Vault</span></div>
+          <ul class="nav__links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="hosptil.html">Search Hospital</a></li>
+          </ul>
+          <a href="login-register.html"><button class="btn">Login</button></a>
+          <a href="login-register.html"><button class="btn">Signup</button></a>
+        </nav>
+        
+
+      </header>
+      Patient Reports
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <img src="img/client.png" alt="Patient Image">
+            <div class="details">
+                <h2>Mayur Dhangar</h2>
+        
+                <p>Weight: 71kg | Height: 5'5</p>
+                <p>Gender: Male | BP: ***</p>
+            </div>
+        </div>
+
+        <!-- Reports Section -->
+        <div class="reports-section">
+            <h2>Reports</h2>
+            <div class="reports">
+                <!-- Report 1 -->
+                <div class="report-card">
+                    <div class="date">24/12/2023</div>
+                    <h3>Fortis</h3>
+                    <p>Review body</p>
+                    <p>by Dr. Name</p>
+                    <a href="report.html">View Report</a>
+                </div>
+                
+
+                <!-- Report 2 -->
+                <div class="report-card">
+                    <div class="date">21/01/2024</div>
+                    <h3>Tata Birla Hospital</h3>
+                    <p>Review body</p>
+                    <p>by Dr. Name</p>
+                    <a href="#">View Report</a>
+                </div>
+
+                <!-- Report 3 -->
+                <div class="report-card">
+                    <div class="date">06/09/2023</div>
+                    <h3>Sassoon Hospital</h3>
+                    <p>Review body</p>
+                    <p>by Dr. Name</p>
+                    <a href="#">View Report</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+  
+    </body>
+</html>
